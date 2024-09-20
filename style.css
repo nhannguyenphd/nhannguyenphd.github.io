@@ -1,0 +1,116 @@
+/* Reset some default styles */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    /* Ensure body and html take full height */
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+h2.name {
+    text-align: center;
+    color: #333;
+}
+
+h1.page-title {
+    text-align: center;
+}
+
+/* Main content area (pushes the footer to the bottom if content is short) */
+body {
+    flex-grow: 1;
+    padding: 20px 25%;
+}
+
+/* Center the header content */
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+ul.nav-list {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+ul.nav-list li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+}
+
+section.intro {
+    text-align: justify;
+}
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+    body {
+        padding: 20px 5%;
+        /* Reduce padding on smaller screens */
+    }
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px 0px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+    /* Ensure footer is pushed to the bottom */
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+ul.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+ul.footer-links li {
+    margin: 0 5px;
+}
+
+ul.footer-links li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul.footer-links li a:hover {
+    text-decoration: underline;
+}
