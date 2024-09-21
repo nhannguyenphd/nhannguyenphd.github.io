@@ -114,3 +114,8 @@ ul.footer-links li a {
 ul.footer-links li a:hover {
     text-decoration: underline;
 }
+
+ul.activities li{
+    list-style-type: none;
+    margin: 20px 0;
+}
